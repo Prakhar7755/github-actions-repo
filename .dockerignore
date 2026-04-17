@@ -1,0 +1,61 @@
+# Node modules (always ignore, install inside container)
+node_modules
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage reports
+coverage
+.nyc_output
+
+# Dependency directories
+jspm_packages
+
+# Build output
+dist
+build
+
+# Environment variables (keep secrets out of images)
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+
+# Docker files (optional, depends on your setup)
+# Dockerfile
+.dockerignore
+
+# Tests (optional, if not needed in container)
+test
+tests
+__tests__
+
+# Docs / misc
+*.md
+
+# IDE/editor folders
+.vscode
+.idea
+
+# Temporary files
+tmp
+temp
+*.swp

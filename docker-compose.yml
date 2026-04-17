@@ -1,0 +1,11 @@
+services:
+  app:
+    container_name: github-actions-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    stdin_open: true
+    tty: true
