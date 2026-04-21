@@ -1,0 +1,7 @@
+node_modules
+build
+coverage
+Dockerfile
+docker-compose.yml
+integration.yml
+*.yml
