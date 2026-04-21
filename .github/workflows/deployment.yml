@@ -1,0 +1,22 @@
+name: Deployment Simulation
+
+on:
+  workflow_dispatch: # Allows manual trigger from the GitHub Actions tab
+  push:
+    tags:
+      - 'v*' # Triggers when you push a version tag like v1.0
+
+jobs:
+  deploy:
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Simulating Build & Release
+        run: |
+          echo "Starting deployment for branch: ${{ github.ref_name }}"
+          echo "Bundling assets..."
+          sleep 2
+          echo "Health checks passing..."
+          echo "Successfully deployed to Production environment!"
