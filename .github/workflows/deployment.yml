@@ -1,10 +1,10 @@
 name: Deployment Simulation
 
 on:
-  workflow_dispatch: # Allows manual trigger from the GitHub Actions tab
   push:
-    tags:
-      - 'v*' # Triggers when you push a version tag like v1.0
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   deploy:
